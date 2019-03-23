@@ -1,8 +1,8 @@
 # R Cloud Examples
 
-The aim of this project is to provide [Docker](www.docker.com)
-images for running [RProject](www.r-project.org) and 
-[Plumber](www.rplumber.io). Plumber is a library for running
+The aim of this project is to provide [Docker](https://www.docker.com)
+images for running [RProject](https://www.r-project.org) and 
+[Plumber](https://www.rplumber.io). Plumber is a library for running
 REST web services in R. Project also contains few simple
 examples of R REST web services.
 
