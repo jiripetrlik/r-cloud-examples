@@ -27,4 +27,28 @@ environment variable.
 
 ## Examples
 
-TODO
+Run Docker container with examples: `docker run -d --name r-cloud-examples -p 80:80
+jiripetrlik/r-cloud-examples`
+
+### Finance
+
+```
+# Show previos day trading
+http://localhost/get-finance-data?symbol=AAPL
+
+[{"AAPL.Open":188.95,"AAPL.High":189.56,"AAPL.Low":187.53,"AAPL.Close":188.72,"AAPL.Volume":20639200,"AAPL.Adjusted":188.72,"_row":"2019-03-28"}]
+```
+
+```
+# Show trading for a specific date
+http://localhost/get-finance-data?symbol=AAPL&date=2019-01-01
+
+[{"AAPL.Open":188.95,"AAPL.High":189.56,"AAPL.Low":187.53,"AAPL.Close":188.72,"AAPL.Volume":20639200,"AAPL.Adjusted":188.72,"_row":"2019-03-28"}]
+```
+
+```
+# Plot trading data with technical analyses (moving average convergence divergence)
+http://localhost/plot-finance-data?symbol=AAPL
+```
+
+![screenshot](img/plot-finance-data.png)
