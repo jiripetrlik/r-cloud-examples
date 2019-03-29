@@ -25,6 +25,11 @@ web service. This webservice can be simply overwritten or
 its location can be changed using `APPLICATION`
 environment variable.
 
+### R Cloud Examples image
+[R Cloud Examples image](https://hub.docker.com/r/jiripetrlik/r-cloud-examples)
+is based on Plumber image and contains examples of R web services.
+Source file for these web services can be found in `R/plumber.R`.
+
 ## Examples
 
 Run Docker container with examples: `docker run -d --name r-cloud-examples -p 80:80
