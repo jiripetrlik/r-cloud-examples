@@ -35,6 +35,22 @@ Source file for these web services can be found in `R/plumber.R`.
 Run Docker container with examples: `docker run -d --name r-cloud-examples -p 80:80
 jiripetrlik/r-cloud-examples`
 
+### Basic
+
+```
+# Print hello world in HTML
+http://localhost
+
+Hello world!!!
+```
+
+```
+# Calculator (f is one of "add", "sub", "mul", "div")
+http://localhost/calculator?operand1=50&operand2=10&f=mul
+
+[500]
+```
+
 ### Finance
 
 ```
