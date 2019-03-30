@@ -7,6 +7,6 @@ RUN Rscript -e 'install.packages("plumber")'
 EXPOSE 80
 VOLUME /app
 
-ADD scripts/* /app/
+ADD docker/rproject-plumber/scripts/* /app/
 
 CMD [ "Rscript", "/app/run-plumber.R" ]

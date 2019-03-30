@@ -57,3 +57,18 @@ http://localhost/plot-finance-data?symbol=AAPL
 ```
 
 ![screenshot](img/plot-finance-data.png)
+
+## Building Images
+
+Images can be build using the `docker build` command:
+
+```
+# Build RProject Image
+docker build . -f docker/rproject/Dockerfile -t rproject
+
+# Build Plumber Image
+docker build . -f docker/rproject-plumber/Dockerfile -t rproject-plumber
+
+# Build R Cloud Examples Image
+docker build . -f docker/r-cloud-examples/Dockerfile -t r-cloud-examples
+```
