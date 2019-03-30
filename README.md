@@ -51,6 +51,25 @@ http://localhost/calculator?operand1=50&operand2=10&f=mul
 [500]
 ```
 
+### Statistics
+
+```
+# Generate Gaussian random numbers
+http://localhost/gaussian-random-numbers?n=5
+
+[0.4087,1.2311,-2.1149,-0.5262,0.671]
+
+# Generate Gaussian random numbers with mean=10 and sd=5
+http://localhost/gaussian-random-numbers?n=5&mean=10&sd=5
+
+[11.6758,4.277,16.4882,2.3011,12.7064]
+
+# Plot normal distribution
+http://localhost/plot-gaussian-distribution
+```
+
+![screenshot](img/gaussian-distribution.png)
+
 ### Finance
 
 ```

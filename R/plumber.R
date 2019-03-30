@@ -26,6 +26,20 @@ function(operand1, operand2, f) {
   }
 }
 
+### Statistics
+
+#' @get /gaussian-random-numbers
+function(n = 1, mean = 0, sd = 1) {
+  return(rnorm(as.numeric(n), as.numeric(mean), as.numeric(sd)))
+}
+
+#' @get /plot-gaussian-distribution
+#' @png(width = 800, height = 600)
+function(mean = 0, sd = 1, min = -4, max = 4) {
+  f <- function(x) { dnorm(x, as.numeric(mean), as.numeric(sd)) }
+  curve(f, as.numeric(min), as.numeric(max))
+}
+
 ### Finance examples
 
 #' @get /get-finance-data
